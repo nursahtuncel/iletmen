@@ -36,6 +36,7 @@ const ContactForm = () => {
         "Mesajınız başarıyla gönderildi! En kısa sürede size dönüş yapacağız.",
     });
 
+
     setTimeout(() => {
       setFormData({
         name: "",
@@ -145,6 +146,7 @@ const ContactForm = () => {
 
   return (
     <div className="modern-contact">
+      {/* Hero Section */}
       <section className="modern-contact__hero">
         <div className="modern-contact__hero-overlay"></div>
         <div className="container">
@@ -152,9 +154,14 @@ const ContactForm = () => {
             <h1 className="modern-contact__hero-title">
               <span className="hero_span">Bizimle</span> İletişime Geçin
             </h1>
+            {/* <p className="modern-contact__hero-subtitle">
+              Sorularınız için buradayız. Size yardımcı olmaktan mutluluk duyarız.
+            </p> */}
           </div>
         </div>
       </section>
+
+      {/* Contact Section */}
       <section className="modern-contact__main">
         <div className="container">
           <div className="modern-contact__tabs">
