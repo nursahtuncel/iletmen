@@ -1,0 +1,173 @@
+
+.yazilim-destegi {
+  max-width: 100%;
+  gap: 20px;
+  background:white;
+  border-radius: 20px;
+  padding: 0;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 25px rgba(77, 168, 166, 0.3);
+  overflow: hidden;
+  position: relative;
+
+}
+
+.yazilim-destegi__image {
+    flex: 1;
+    min-width: 400px;
+    max-width: 600px;
+    min-height: 400px;
+    position: relative;
+    overflow: hidden;
+}
+
+.yazilim-destegi__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+
+.yazilim-destegi__text {
+
+  max-width: 1200px;
+  flex: 1;
+  padding: 3rem;
+  position: relative;
+  z-index: 1;
+}
+
+.yazilim-destegi__text h2 {
+  font-size: 3rem;
+  color: #2d3748;
+  margin-bottom: 1.2rem;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.yazilim-destegi__text p {
+  font-size: 1.1rem;
+  color: #4a5568;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+
+.cta-buttons {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.primary-btn,
+.secondary-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  padding: 0.8rem 1.8rem;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: none;
+  text-decoration: none;
+}
+
+.navbarMobileLink {
+  text-decoration: none;
+  color: #374151;
+  font-weight: 500;
+  font-size: 18px;
+  padding: 12px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  display: block;
+  position: relative;
+  overflow: hidden;
+}
+
+.navbarMobileLink::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 100%;
+  background: linear-gradient(90deg, #4da8a6, #6fd0cc);
+  opacity: 0.1;
+  transition: width 0.3s ease;
+}
+
+.navbarMobileLink:hover::before {
+  width: 100%;
+}
+
+.navbarMobileLink:hover {
+  color: #4da8a6;
+  transform: translateX(8px);
+  background: rgba(77, 168, 166, 0.05);
+}
+
+.yazilim-destegi__btn {
+  padding: 10px 16px;
+  border-radius: 15px;
+  background: #57bdba;
+  color: white;
+  box-shadow: 0 4px 15px rgba(87, 189, 186, 0.3);
+}
+.primary-btn{
+   width: fit-content;
+}
+.primary-btn:hover {
+ 
+  background: #4aa8a5;
+  transform: translateY(-2px);
+  color: white;
+  box-shadow: 0 6px 20px rgba(87, 189, 186, 0.4);
+  transform: translateY(-2px);
+}
+
+.secondary-btn {
+  background: transparent;
+  color: #57bdba;
+  border: 2px solid #57bdba;
+}
+
+.secondary-btn:hover {
+  background: rgba(87, 189, 186, 0.1);
+}
+
+@media (max-width: 768px) {
+  .yazilim-destegi {
+    flex-direction: column;
+    margin: 2rem 1rem;
+  }
+
+  .yazilim-destegi__image {
+    min-height: 250px;
+    width: 100%;
+  }
+
+  .yazilim-destegi__text {
+    padding: 2rem 1.5rem;
+  }
+
+  .yazilim-destegi__text h2 {
+    font-size: 1.6rem;
+  }
+
+  .cta-buttons {
+    flex-direction: column;
+  }
+
+  .primary-btn,
+  .secondary-btn {
+    width: 100%;
+    justify-content: center;
+  }
+}

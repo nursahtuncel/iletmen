@@ -1,0 +1,182 @@
+.hizmetlerimiz__benefits {
+  padding: var(--spacing-4xl) 0;
+  background: linear-gradient(135deg, var(--gray-50), var(--white));
+}
+
+.hizmetlerimiz__benefits-header {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto var(--spacing-3xl);
+}
+
+.hizmetlerimiz__benefits-title {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: var(--gray-900);
+  margin-bottom: var(--spacing-md);
+}
+
+.hizmetlerimiz__benefits-subtitle {
+  font-size: 1.25rem;
+  color: var(--gray-600);
+  line-height: 1.6;
+}
+
+.hizmetlerimiz__benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--spacing-xl);
+}
+
+.hizmetlerimiz__benefit-item {
+  text-align: center;
+  padding: var(--spacing-xl);
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--gray-200);
+  transition: all var(--transition-normal);
+}
+
+.hizmetlerimiz__benefit-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  border-color: var(--primary-blue);
+}
+
+.hizmetlerimiz__benefit-icon {
+  font-size: 2.5rem;
+  margin-bottom: var(--spacing-lg);
+  display: block;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+}
+
+.hizmetlerimiz__benefit-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--gray-900);
+  margin-bottom: var(--spacing-md);
+}
+
+.hizmetlerimiz__benefit-description {
+  color: var(--gray-600);
+  line-height: 1.6;
+}
+
+
+@media (max-width: 1024px) {
+  .hizmetlerimiz__services-grid {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--spacing-lg);
+  }
+  
+  .hizmetlerimiz__benefits-grid {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: var(--spacing-lg);
+  }
+}
+
+@media (max-width: 768px) {
+  .hizmetlerimiz__hero {
+    padding: var(--spacing-3xl) 0;
+  }
+  
+  .hizmetlerimiz__hero-title {
+    font-size: 2.5rem;
+  }
+  
+  .hizmetlerimiz__hero-subtitle {
+    font-size: 1.125rem;
+  }
+  
+  .hizmetlerimiz__hero-actions {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .hizmetlerimiz__services {
+    padding: var(--spacing-3xl) 0;
+  }
+  
+  .hizmetlerimiz__services-title {
+    font-size: 2rem;
+  }
+  
+  .hizmetlerimiz__services-subtitle {
+    font-size: 1.125rem;
+  }
+  
+  .hizmetlerimiz__services-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-md);
+  }
+  
+  .hizmetlerimiz__benefits {
+    padding: var(--spacing-3xl) 0;
+  }
+  
+  .hizmetlerimiz__benefits-title {
+    font-size: 2rem;
+  }
+  
+  .hizmetlerimiz__benefits-subtitle {
+    font-size: 1.125rem;
+  }
+  
+  .hizmetlerimiz__benefits-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-md);
+  }
+  
+  .hizmetlerimiz__cta {
+    padding: var(--spacing-3xl) 0;
+  }
+  
+  .hizmetlerimiz__cta-title {
+    font-size: 2rem;
+  }
+  
+  .hizmetlerimiz__cta-description {
+    font-size: 1.125rem;
+  }
+  
+  .hizmetlerimiz__cta-actions {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .hizmetlerimiz__hero-title {
+    font-size: 2rem;
+  }
+  
+  .hizmetlerimiz__hero-subtitle {
+    font-size: 1rem;
+  }
+  
+  .hizmetlerimiz__services-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .hizmetlerimiz__service-item {
+    padding: var(--spacing-lg);
+  }
+  
+  .hizmetlerimiz__benefits-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .hizmetlerimiz__benefit-item {
+    padding: var(--spacing-lg);
+  }
+  
+  .hizmetlerimiz__cta-title {
+    font-size: 1.75rem;
+  }
+  
+  .hizmetlerimiz__cta-description {
+    font-size: 1rem;
+  }
+}
+
+

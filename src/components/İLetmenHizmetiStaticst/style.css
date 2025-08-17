@@ -1,0 +1,100 @@
+
+.iletmen-stats {
+display: flex;  
+  background: var(--white);
+  padding: var(--spacing-3xl) 0;
+  border-bottom: 1px solid var(--gray-200);
+}
+
+.iletmen-stats-grid { 
+  display: grid;
+grid-template-columns: repeat(3, 1fr);
+
+  gap: 20px;
+    max-width: 1240px;
+    width: 100%;
+  margin: 0 auto;
+}
+
+.iletmen-stat-item {
+  text-align: center;
+  padding: var(--spacing-xl);
+  background: linear-gradient(135deg, var(--gray-50), var(--white));
+  border-radius: var(--radius-xl);
+  border: 1px solid var(--gray-200);
+  transition: all var(--transition-normal);
+  position: relative;
+  overflow: hidden;
+}
+
+.iletmen-stat-item:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--primary-teal);
+}
+
+.iletmen-stat-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, var(--primary-teal), var(--primary-teal-light));
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.5s ease-out;
+}
+
+.iletmen-stat-item:hover::before {
+  transform: scaleX(1);
+}
+
+.iletmen-stat-number {
+  font-size: var(--text-5xl);
+  font-weight: 700;
+  color: var(--primary-teal);
+  margin-bottom: var(--spacing-sm);
+  background: linear-gradient(135deg, var(--primary-teal), var(--primary-teal-dark));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  min-height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.iletmen-stat-label {
+  font-size: var(--text-lg);
+  color: var(--gray-700);
+  font-weight: 600;
+  margin-bottom: var(--spacing-sm);
+}
+
+.iletmen-stat-icon {
+  font-size: var(--text-3xl);
+  opacity: 0.8;
+  margin-top: var(--spacing-sm);
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.iletmen-stat-item:hover .iletmen-stat-icon {
+  transform: scale(1.2);
+  opacity: 1;
+}
+@media (max-width: 868px) {
+  .iletmen-stats-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .iletmen-stat-item {
+    margin-bottom: var(--spacing-lg);
+  }
+  
+  .iletmen-stat-item:last-child {
+    margin-bottom: 0;
+  }
+  
+}
